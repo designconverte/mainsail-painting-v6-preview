@@ -23,11 +23,13 @@
 <link rel="icon" href="/mainsail-painting-v6-preview/favicon.ico" sizes="any">
 <link rel="icon" href="/mainsail-painting-v6-preview/assets/img/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/mainsail-painting-v6-preview/assets/img/icon-180.png">
+<link rel="preload" as="image" type="image/webp" imagesrcset="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-480.webp 480w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-800.webp 800w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp 1200w" imagesizes="(max-width: 767px) 60vw, 100vw" fetchpriority="high">
 <link rel="preload" href="/mainsail-painting-v6-preview/assets/fonts/cormorant-500-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/mainsail-painting-v6-preview/assets/fonts/jost-latin-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/mainsail-painting-v6-preview/assets/css/blog.css">
 <script defer src="/mainsail-painting-v6-preview/assets/js/blog.js"></script>
 <link rel="alternate" type="application/rss+xml" title="The Mainsail Painting Blog" href="https://designconverte.github.io/mainsail-painting-v6-preview/blog/feed.xml">
+<link rel="alternate" type="application/feed+json" title="The Mainsail Painting Blog" href="https://designconverte.github.io/mainsail-painting-v6-preview/blog/feed.json">
 <link rel="stylesheet" href="/mainsail-painting-v6-preview/assets/css/fonts.css">
 <link rel="stylesheet" href="/mainsail-painting-v6-preview/assets/css/tokens.css">
 <link rel="stylesheet" href="/mainsail-painting-v6-preview/assets/css/form.css">
@@ -254,6 +256,9 @@
    "publisher": {
     "@id": "https://mainsailpainting.com/#business"
    },
+   "isPartOf": {
+    "@id": "https://mainsailpainting.com/#website"
+   },
    "blogPost": [
     {
      "@type": "BlogPosting",
@@ -300,41 +305,46 @@
  ]
 }
 </script>
-<section class="bhead" aria-labelledby="blog-title">
-  <div class="wrap bhead__in bhead__in--index">
-    <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/mainsail-painting-v6-preview/">Home</a></li><li><span aria-current="page">Blog</span></li></ol></nav>
-    <h1 class="bhead__kicker" id="blog-title">The Mainsail Painting Blog</h1>
-    <p class="bhead__display">Painting advice for Cape Cod &amp; South Shore homes</p>
-    <p class="bhead__lead">Guides from the crew that paints here: when to paint, how to prep, which finish goes where. Every fact about paint, weather or regulation links to its source.</p>
-    <form class="bsearch bsearch--big" role="search" action="/mainsail-painting-v6-preview/blog/" method="get" data-bsearch>
-  <label class="bsearch__l" for="bsearch-q">Search the blog</label>
-  <div class="bsearch__row"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input class="bsearch__in" id="bsearch-q" type="search" name="q" placeholder="Try &ldquo;dew&rdquo; or &ldquo;stain&rdquo;" autocomplete="off" enterkeyhint="search" data-bsearch-input aria-describedby="bsearch-hint"><button class="bsearch__btn" type="submit">Search</button></div>
-  <p class="bsearch__hint" id="bsearch-hint">Results update as you type. Press <kbd>/</kbd> to jump here.</p><p class="bsearch__status" role="status" aria-live="polite" data-bsearch-status></p>
-</form>
+<section class="bcover" aria-labelledby="blog-title" style="--focus: 50% 45%">
+  <div class="bcover__media" aria-hidden="true"><img src="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp" srcset="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-480.webp 480w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-800.webp 800w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp 1200w" sizes="(max-width: 767px) 60vw, 100vw" width="1200" height="675" alt="" loading="eager" decoding="async" class="bcover__img" fetchpriority="high"><span class="bcover__veil"></span></div>
+  <div class="wrap bcover__in">
+    <div class="bcover__mast">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/mainsail-painting-v6-preview/">Home</a></li><li><span aria-current="page">Blog</span></li></ol></nav>
+      <h1 class="bcover__kicker" id="blog-title">The Mainsail Painting Blog</h1>
+      <p class="bcover__display">Painting advice for Cape Cod &amp; South Shore homes</p>
+      <p class="bcover__lead">Guides from the crew that paints here: when to paint, how to prep, which finish goes where. Every fact about paint, weather or regulation links to its source.</p>
+    </div>
+    <div class="bask" data-bask>
+  <form class="bask__form" role="search" action="/mainsail-painting-v6-preview/blog/" method="get" data-bsearch>
+    <label class="bask__l" for="bsearch-q">Search the blog</label>
+    <div class="bask__row"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></svg><input class="bask__in" id="bsearch-q" type="search" name="q" placeholder="Ask: too cold to paint?" autocomplete="off" enterkeyhint="search" aria-describedby="bsearch-hint" aria-controls="bresults" data-bsearch-input><kbd class="bask__kbd" aria-hidden="true">/</kbd><button class="bask__btn" type="submit">Search</button></div>
+    <p class="bask__hint" id="bsearch-hint">Answers appear as you type, with a link to the exact section.</p>
+    <p class="sr-only" role="status" aria-live="polite" data-bsearch-status></p>
+  </form>
+  <section class="bpanel" id="bresults" data-bresults hidden aria-labelledby="bresults-t">
+    <div class="bpanel__head"><h2 class="bpanel__t" id="bresults-t" data-bresults-title>Search results</h2><button class="bpanel__x" type="button" data-bresults-clear>Clear<span class="sr-only"> search</span></button></div>
+    <ol class="bpanel__list" data-bresults-list></ol>
+    <div class="bpanel__empty" data-bresults-empty hidden>
+      <p class="bpanel__none">Try a shorter word, or browse a topic:</p>
+      <ul class="bpanel__cats"><li><a href="/mainsail-painting-v6-preview/blog/category/exterior-painting/">Exterior Painting</a></li></ul>
+      <p>Have a question we haven&rsquo;t written about? Call or text Vinny at <a href="tel:+15085931087" data-cta="blog-search-call" data-cta-location="blog-search">(508) 593-1087</a>.</p>
+    </div>
+  </section>
+</div>
   </div>
 </section>
-<div class="wrap blayout" data-blayout>
+<div class="wrap blayout">
   <div class="bmain">
     <nav class="bchips" aria-label="Blog categories"><ul><li><a href="/mainsail-painting-v6-preview/blog/" aria-current="page">All <span>2</span></a></li><li><a href="/mainsail-painting-v6-preview/blog/category/exterior-painting/">Exterior Painting <span>2</span></a></li></ul></nav>
-    <section class="bresults" data-bresults hidden aria-labelledby="bresults-t">
-      <h2 class="bsec-t" id="bresults-t" data-bresults-title>Search results</h2>
-      <ol class="bresults__list" data-bresults-list></ol>
-      <div class="bresults__empty" data-bresults-empty hidden>
-        <p class="bresults__none">Try a shorter word, or browse a category:</p>
-        <ul class="bresults__cats"><li><a href="/mainsail-painting-v6-preview/blog/category/exterior-painting/">Exterior Painting</a></li></ul>
-        <p>Have a question we haven&rsquo;t written about? Call or text Vinny at <a href="tel:+15085931087" data-cta="blog-search-call" data-cta-location="blog-search">(508) 593-1087</a>.</p>
-      </div>
-      <button class="link-arrow bresults__clear" type="button" data-bresults-clear>Clear search</button>
-    </section>
     <div data-blist>
 
-    <section class="bfeat" aria-labelledby="bfeat-t"><h2 class="sr-only" id="bfeat-t">Latest article</h2><article class="bcard bcard--feat">
-  <a class="bcard__media" href="/mainsail-painting-v6-preview/blog/how-long-does-exterior-paint-last/" tabindex="-1" aria-hidden="true"><img src="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp" srcset="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-480.webp 480w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-800.webp 800w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp 1200w" sizes="(min-width: 1024px) 520px, 92vw" width="1200" height="675" alt="" loading="eager" decoding="async" class="bcard__img" fetchpriority="high"></a>
-  <div class="bcard__body"><p class="bcard__cat">Exterior Painting</p><h3 class="bcard__t"><a href="/mainsail-painting-v6-preview/blog/how-long-does-exterior-paint-last/">How Long Does Exterior Paint Last on a Cape Cod Home?</a></h3><p class="bcard__x">A good paint job on wood siding often lasts 7 to 10 years. Learn what shortens it on Cape Cod, how often to repaint, and the signs it is time.</p><p class="bcard__meta"><time datetime="2026-11-22">Nov 22, 2026</time><span aria-hidden="true"> · </span>7 min read</p></div>
+    <section class="bfeat" aria-labelledby="bfeat-t"><h2 class="sr-only" id="bfeat-t">Latest article</h2><article class="bcard bcard--feat" data-reveal>
+  <a class="bcard__media" href="/mainsail-painting-v6-preview/blog/how-long-does-exterior-paint-last/" tabindex="-1" aria-hidden="true"><img src="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp" srcset="/mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-480.webp 480w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-800.webp 800w, /mainsail-painting-v6-preview/blog/img/how-long-does-exterior-paint-last/hero-16x9-1200.webp 1200w" sizes="(min-width: 1024px) 520px, 92vw" width="1200" height="675" alt="" loading="lazy" decoding="async" class="bcard__img"></a>
+  <div class="bcard__body"><p class="bcard__cat">Exterior Painting</p><h3 class="bcard__t"><a href="/mainsail-painting-v6-preview/blog/how-long-does-exterior-paint-last/">How Long Does Exterior Paint Last on a Cape Cod Home?</a></h3><p class="bcard__x">A good paint job on wood siding often lasts 7 to 10 years. Learn what shortens it on Cape Cod, how often to repaint, and the signs it is time.</p><p class="bcard__meta"><time datetime="2026-11-22">Nov 22, 2026</time><span aria-hidden="true"> · </span>7 min read<span aria-hidden="true"> · </span>7 sources</p></div>
 </article></section>
-    <section class="bgrid-wrap" aria-labelledby="bgrid-t"><h2 class="bsec-t" id="bgrid-t">More articles</h2><div class="bgrid"><article class="bcard">
+    <section class="bgrid-wrap" aria-labelledby="bgrid-t"><h2 class="bsec-t" id="bgrid-t">More articles</h2><div class="bgrid"><article class="bcard" data-reveal>
   <a class="bcard__media" href="/mainsail-painting-v6-preview/blog/best-time-to-paint-house-exterior-cape-cod/" tabindex="-1" aria-hidden="true"><img src="/mainsail-painting-v6-preview/blog/img/best-time-to-paint-house-exterior-cape-cod/hero-16x9-1536.webp" srcset="/mainsail-painting-v6-preview/blog/img/best-time-to-paint-house-exterior-cape-cod/hero-16x9-480.webp 480w, /mainsail-painting-v6-preview/blog/img/best-time-to-paint-house-exterior-cape-cod/hero-16x9-800.webp 800w, /mainsail-painting-v6-preview/blog/img/best-time-to-paint-house-exterior-cape-cod/hero-16x9-1200.webp 1200w, /mainsail-painting-v6-preview/blog/img/best-time-to-paint-house-exterior-cape-cod/hero-16x9-1536.webp 1536w" sizes="(min-width: 1024px) 380px, 92vw" width="1536" height="864" alt="" loading="lazy" decoding="async" class="bcard__img"></a>
-  <div class="bcard__body"><p class="bcard__cat">Exterior Painting</p><h3 class="bcard__t"><a href="/mainsail-painting-v6-preview/blog/best-time-to-paint-house-exterior-cape-cod/">When Is the Best Time to Paint a House Exterior on Cape Cod?</a></h3><p class="bcard__x">On Cape Cod, the dependable window for exterior paint runs from late May through September. See the temperatures, dew rules and data behind it.</p><p class="bcard__meta"><time datetime="2026-11-20">Nov 20, 2026</time><span aria-hidden="true"> · </span>11 min read</p></div>
+  <div class="bcard__body"><p class="bcard__cat">Exterior Painting</p><h3 class="bcard__t"><a href="/mainsail-painting-v6-preview/blog/best-time-to-paint-house-exterior-cape-cod/">When Is the Best Time to Paint a House Exterior on Cape Cod?</a></h3><p class="bcard__x">On Cape Cod, the dependable window for exterior paint runs from late May through September. See the temperatures, dew rules and data behind it.</p><p class="bcard__meta"><time datetime="2026-11-20">Nov 20, 2026</time><span aria-hidden="true"> · </span>11 min read<span aria-hidden="true"> · </span>18 sources</p></div>
 </article></div></section>
 
     </div>
@@ -347,13 +357,13 @@
     <p class="bside__sp">We visit within 24 hours and send a written quote within one business&nbsp;day.</p>
 
 <form class="starter" action="#schedule" data-starter="quote-schedule" novalidate>
-  <label class="starter__l" for="starter-zip">Schedule your visit</label>
+  <label class="starter__l" for="starter-zip-side">Schedule your visit</label>
   <div class="starter__row">
-    <input class="input" id="starter-zip" name="starter_zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="ZIP code of the home" aria-describedby="starter-err">
-    <button class="btn btn--brass" type="submit" data-hero-cta data-cta="hero-starter">Next <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
+    <input class="input" id="starter-zip-side" name="starter_zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="ZIP code of the home" aria-describedby="starter-err-side">
+    <button class="btn btn--brass" type="submit" data-hero-cta data-cta="blog-sidebar-starter">Next <svg class="ic" aria-hidden="true"><use href="#i-arrow-right"></use></svg></button>
   </div>
-  <p class="starter__err" id="starter-err" data-starter-err hidden>Enter a 5-digit ZIP code.</p>
-  <p class="starter__alt">Or call or text Vinny at <a href="tel:+15085931087" data-cta="hero-call" data-cta-location="hero">(508) 593-1087</a></p>
+  <p class="starter__err" id="starter-err-side" data-starter-err hidden>Enter a 5-digit ZIP code.</p>
+  <p class="starter__alt">Or call or text Vinny at <a href="tel:+15085931087" data-cta="blog-sidebar-call" data-cta-location="blog-sidebar">(508) 593-1087</a></p>
 </form>
 
   </section>
