@@ -1,0 +1,7 @@
+Fonts in this folder (latin subsets, WOFF2) are licensed under the SIL Open Font License, Version 1.1.
+Full license text: https://openfontlicense.org/open-font-license-official-text/
+
+Cormorant: Copyright 2015 The Cormorant Project Authors (github.com/CatharsisFonts/Cormorant)
+Jost: Copyright 2020 The Jost Project Authors (github.com/indestructible-type/Jost)
+Outfit: Copyright 2021 The Outfit Project Authors (github.com/Outfitio/Outfit-Fonts)
+  (weight 500 instanced from the variable font and subset to latin with fontTools, home V2)
